@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'amaz';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/AmazS.T.A.L.K.E.R.v.3.0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic-ext,cyrillic);
+
+body {
+  /*background: url(chrome-extension://__MSG_@@extension_id__/bg.jpg) no-repeat center #333 !important;*/
+  /*background-size: cover !important;*/
+  background: url(chrome-extension://__MSG_@@extension_id__/img/back.jpg) repeat top left !important;
+  background-size: 50% auto !important;
+  /*font-family: 'Roboto', sans-serif !important;*/
+  font-family: 'Open Sans', sans-serif !important;
+  height: 100% !important;
+  color: #fff !important;
+  width: 100%  !important;
+  /*background-attachment: fixed !important;*/
+  backface-visibility: hidden !important;
+  overflow: auto  !important;
+}
+a {
+  color: #89BD7E !important;
+}
+#page_body {
+  font-size: 12px !important;
+  width: 640px !important;
+  box-sizing: border-box !important;
+  background: 
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-top-left.png) no-repeat top left,
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-top-right.png) no-repeat top right,
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-bottom-left.png) no-repeat bottom left,
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-bottom-right.png) no-repeat bottom right,
+
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-left.png) repeat-y top left,
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-right.png) repeat-y top right,
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-top.png) repeat-x top center,
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-bottom.png) repeat-x bottom center,
+
+    url(chrome-extension://__MSG_@@extension_id__/img/main-bg-center.png) repeat top left
+    #333 !important;
+  padding: 10px !important;
+}
+#wrap1 {
+  border: none !important;
+}
+#feed_bar {
+  background: transparent !important;
+}
+.wide_wall_module {
+  background: transparent !important;
+  padding: 10px !important;
+}
+.wide_wall_module .post_info {
+  width: calc(100% - 60px) !important;
+}
+#page_layout {
+  width: 800px !important;
+}
+#main_feed .post {
+  padding: 15px 0 !important;
+  position: relative !important;
+  border-bottom: 1px solid rgba(255,255,255,.1) !important;
+}
+#main_feed .post:after {
+  content: '';
+  background:
+    url(chrome-extension://__MSG_@@extension_id__/img/separator-bg-left.png) no-repeat left,
+    url(chrome-extension://__MSG_@@extension_id__/img/separator-bg-right.png) no-repeat right,
+    url(chrome-extension://__MSG_@@extension_id__/img/separator-bg-center.png) repeat-x center !important;
+  display: block;
+  height: 140px;
+  pointer-events: none;
+  position: absolute;
+  bottom: -70px;
+  left: -20px; right: -20px;
+}
+
+#feed_new_posts {
+
+}
+.wall_module .online {
+  font-size: 10px !important;
+  position: relative !important;
+}
+.wall_module .online:before {
+  content: '';
+  width: 4px; height: 4px;
+  background: #5d5;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-left: -8px;
+}
+#side_bar {
+  width: 150px !important;
+  box-sizing: border-box !important;
+}
+/*.page_post_thumb_sized_photo {
+  width: 100% !important; height: 100% !important;
+}*/
+/*.wide_wall_module .wall_text,
+.wide_wall_module .wall_post_text {
+  width: 100% !important;
+}*/
